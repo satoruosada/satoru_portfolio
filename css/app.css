@@ -59,7 +59,7 @@ p, a {
   -webkit-font-smoothing: antialiased; }
 
 a {
-  color: #b0b0ab;
+  color: #2e2e2b;
   text-decoration: none;
   transition: .3s; }
 
@@ -80,6 +80,44 @@ img {
   opacity: 0;
   transform: translateY(-200px);
   transition: all 1s; }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  color: #fff; }
+
+ul.c-menu li {
+  float: left;
+  position: relative;
+  right: 400px;
+  margin: 0 0 0 1px;
+  padding: 5px;
+  width: 100px;
+  display: block; }
+
+ul.sub {
+  display: none;
+  position: absolute;
+  margin-left: -6px;
+  padding: 0; }
+
+ul.sub li a {
+  font-size: 12px;
+  padding: 5px 17px;
+  margin-left: -5px;
+  margin-right: -5px;
+  margin-bottom: -5px;
+  display: block;
+  color: #fff;
+  position: relative;
+  top: 10px;
+  left: 400px;
+  text-align: center; }
+
+ul.sub li a:hover {
+  background: #ff9900;
+  text-decoration: none; }
 
 .l-container {
   width: 80%;
@@ -144,6 +182,7 @@ img {
   box-sizing: border-box;
   width: 100%;
   height: 80px;
+  background: #ece177;
   color: #777;
   display: flex;
   align-items: center;
@@ -206,6 +245,49 @@ img {
     width: 100%;
     font-size: 18px; }
 
+.btn {
+  position: relative;
+  color: #49394b;
+  width: 80px;
+  height: 64px;
+  line-height: 64px;
+  transition: all 0.3s;
+  text-align: center;
+  margin-right: 10px; }
+  .btn span {
+    transition: all 0.3s;
+    tranform: scale(1, 1); }
+
+.btn::before, .btn::after {
+  content: '';
+  position: absolute;
+  transition: all 0.3s;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1; }
+
+.btn-one::before {
+  left: 4px;
+  z-index: 1;
+  opacity: 0;
+  background: rgba(255, 255, 255, 0.5);
+  transform: scale(0.1, 1); }
+
+.btn-one:hover::before {
+  opacity: 1;
+  transform: scale(1, 1); }
+
+.btn-one::after {
+  transition: all 0.3s;
+  border: 3px solid rgba(255, 255, 255, 0.5);
+  width: 70px; }
+
+.btn-one:hover::after {
+  transform: scale(1, 0.1);
+  opacity: 0; }
+
 .c-form {
   width: 100%; }
   .c-form__m {
@@ -241,7 +323,10 @@ img {
   display: flex;
   align-items: center;
   font-size: 24px;
-  font-family: "Amatic SC", cursive; }
+  font-family: "Amatic SC", cursive;
+  float: right;
+  position: relative;
+  right: -400px; }
   .c-menu__item {
     margin-right: 20px; }
   .c-menu__link {

@@ -17,7 +17,7 @@ html, body {
 
 
 a {
-  color: rgb(176, 176, 171);
+  color: rgb(46, 46, 43);
   text-decoration: none;
   transition: .3s;
 }
@@ -40,4 +40,43 @@ img {
   opacity:0;
   transform: translateY(-200px);
   transition: all 1s;
+}
+ul{
+  list-style-type: none;
+  margin:0;
+  padding: 0;
+  color: #fff;
+
+}
+ul.c-menu li{
+  float: left;
+  position: relative;
+  right:400px;
+  margin:0 0 0 1px;
+  padding: 5px;
+  width:100px;
+  display: block;
+}
+ul.sub{
+  display: none;
+  position: absolute;
+  margin-left: -6px;
+  padding: 0;
+}
+ul.sub li a{
+  font-size: 12px;
+  padding: 5px 17px;
+  margin-left: -5px;
+  margin-right: -5px;
+  margin-bottom: -5px;
+  display: block;
+  color: #fff;
+  position: relative;
+  top:10px;
+  left:400px;
+  text-align: center;
+}
+ul.sub li a:hover{
+  background: #ff9900;
+  text-decoration: none;
 }
