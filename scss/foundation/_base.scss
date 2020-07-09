@@ -16,16 +16,9 @@ p,a{
   -webkit-font-smoothing:antialiased;
   color:$font-color_default;
 }
-<<<<<<< HEAD
 a{
   color:black;
   font-weight: bold;
-=======
-
-
-a {
-  color: rgb(46, 46, 43);
->>>>>>> b9a2c4f320995b3980ef76529ce54fa18773040d
   text-decoration: none;
   transition: .3s;
 }
@@ -34,7 +27,6 @@ a:hover{
   transition: .3s;
  }
 
-<<<<<<< HEAD
  img {
    width: 100%;
    vertical-align: bottom;
@@ -49,58 +41,3 @@ a:hover{
    transform: translateY(-200px);
    transition: all 1s;
  }
-=======
-img {
-  width: 100%;
-  vertical-align: bottom;
-}
-.js-slideIn{
-  opacity:0;
-  transform: translateX(-200px);
-  transition: all 5s;
-}
-.js-fadeIn{
-  opacity:0;
-  transform: translateY(-200px);
-  transition: all 1s;
-}
-ul{
-  list-style-type: none;
-  margin:0;
-  padding: 0;
-  color: #fff;
-
-}
-ul.c-menu li{
-  float: left;
-  position: relative;
-  right:400px;
-  margin:0 0 0 1px;
-  padding: 5px;
-  width:100px;
-  display: block;
-}
-ul.sub{
-  display: none;
-  position: absolute;
-  margin-left: -6px;
-  padding: 0;
-}
-ul.sub li a{
-  font-size: 12px;
-  padding: 5px 17px;
-  margin-left: -5px;
-  margin-right: -5px;
-  margin-bottom: -5px;
-  display: block;
-  color: #fff;
-  position: relative;
-  top:10px;
-  left:400px;
-  text-align: center;
-}
-ul.sub li a:hover{
-  background: #ff9900;
-  text-decoration: none;
-}
->>>>>>> b9a2c4f320995b3980ef76529ce54fa18773040d
