@@ -25,5 +25,7 @@
   }
   &__title {
     font-size: $font-size_m;
+    -webkit-font-smoothing:antialiased;
+    color:$font-color_default;
   }
 }
