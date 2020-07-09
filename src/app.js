@@ -6,6 +6,15 @@ $(function () {
     $('.js-float-menu').toggleClass('float-active', $(this).scrollTop() > targetHeight);
   });
 
+  //DropDownmenu
+ $(function(){
+  $("ul.c-menu li").hover(function(){
+    $("ul.sub:not(:animated)", this).slideDown();
+  }, function(){
+    $("ul.sub", this).slideUp();
+  });
+});
+
   //spメニュー
   $('.js-toggle-sp-menu').on('click',function(){
     $(this).toggleClass('active');

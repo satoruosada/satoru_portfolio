@@ -1,9 +1,9 @@
 //plug-in
 var gulp = require('gulp');
+var sass = require('gulp-sass');
 var browserify = require('browserify');
 var browserSync = require('browser-sync').create();
 var source = require('vinyl-source-stream');
-
 
 // gulpタスクの作成
 gulp.task('build', function(done){
