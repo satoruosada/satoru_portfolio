@@ -155,7 +155,7 @@ img {
   z-index: 2; }
   .l-header.float-active {
     transition: .3s;
-    background: rgba(171, 81, 151, 0.9); }
+    background: rgba(236, 188, 227, 0.9); }
   @media screen and (max-width: 414px) {
     .l-header {
       height: 60px;
@@ -402,11 +402,13 @@ img {
       width: 80%; } }
   .p-news__item {
     margin-bottom: 5px;
-    text-align: center; }
+    position: relative;
+    top: 10px;
+    left: 80px; }
   .p-news__date {
     color: #e37b89;
     font-weight: bold;
-    font-family: "Amatic SC", cursive;
+    font-family: cursive;
     -webkit-font-smoothing: initial;
     margin-right: 10px; }
   .p-news__title {

@@ -14,14 +14,16 @@
   padding: $space_l $space_xl;
   &__item {
     margin-bottom: $space_s;
-    text-align: center;
+    position: relative;
+    top: 10px;
+    left: 80px;
   }
   &__date {
     color: $font-color_date;
     font-weight: bold;
-    font-family: $font-family_corp;
+    font-family: cursive;
     -webkit-font-smoothing: initial;
-    margin-right: $space_m;
+    margin-right: 10px;
   }
   &__title {
     font-size: $font-size_m;
