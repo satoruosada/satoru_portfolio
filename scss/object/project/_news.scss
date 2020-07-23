@@ -14,9 +14,7 @@
   padding: $space_l $space_xl;
   &__item {
     margin-bottom: $space_s;
-    position: relative;
-    top: 10px;
-    left: 80px;
+    text-align: center;
   }
   &__date {
     color: $font-color_date;

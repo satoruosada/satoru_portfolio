@@ -275,6 +275,10 @@ img {
       transform: scale(1.03);
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
       transition: .5s; }
+  @media screen and (max-width: 414px) {
+    .c-panel__body-last {
+      position: relative;
+      top: -154px; } }
   .c-panel__border {
     border-radius: 5px;
     border: 5px solid #f6f5f4; }
@@ -402,9 +406,7 @@ img {
       width: 80%; } }
   .p-news__item {
     margin-bottom: 5px;
-    position: relative;
-    top: 10px;
-    left: 80px; }
+    text-align: center; }
   .p-news__date {
     color: #e37b89;
     font-weight: bold;
