@@ -15,7 +15,9 @@ html, body{
 p,a{
   -webkit-font-smoothing:antialiased;
   color:$font-color_default;
+  
 }
+
 a{
   color:black;
   font-weight: bold;
@@ -30,6 +32,11 @@ a:hover{
  img {
    width: 100%;
    vertical-align: bottom;
+ }
+ .js-slideDown{
+  opacity:0;
+  transform: translateX(+200px);
+  transition: all 1s;
  }
  .js-slideIn{
    opacity:0;

@@ -23,6 +23,22 @@ $(function () {
   });
 });
 
+//access
+$(function(){
+  $(window).scroll(function(){
+    $('.js-slideDown').each(function(){
+      var targetElement = $(this).offset().top;
+       var scroll = $(window).scrollTop();
+       var windowHeight = $(window).height();
+       if(scroll > targetElement - windowHeight + 300){
+         $(this).css('opacity','1');
+         $(this).css('transform','translateX(0)');
+       }
+     });
+   });
+ });
+
+//contact
  $(function(){
    $(window).scroll(function(){
      $('.js-fadeIn').each(function(){
