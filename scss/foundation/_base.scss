@@ -17,7 +17,6 @@ p,a{
   color:$font-color_default;
   
 }
-
 a{
   color:black;
   font-weight: bold;
@@ -36,7 +35,12 @@ a:hover{
  .js-slideDown{
   opacity:0;
   transform: translateX(+200px);
-  transition: all 1s;
+  transition: all 2s;
+ }
+ .js-slideUp{
+  opacity:0;
+  transform: translateY(+200px);
+  transition: all 2s;
  }
  .js-slideIn{
    opacity:0;

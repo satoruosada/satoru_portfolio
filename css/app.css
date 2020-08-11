@@ -77,7 +77,12 @@ img {
 .js-slideDown {
   opacity: 0;
   transform: translateX(200px);
-  transition: all 1s; }
+  transition: all 2s; }
+
+.js-slideUp {
+  opacity: 0;
+  transform: translateY(200px);
+  transition: all 2s; }
 
 .js-slideIn {
   opacity: 0;
@@ -117,6 +122,43 @@ img {
       .l-container__body {
         padding-left: 15px;
         padding-right: 15px; } }
+  .l-container__bodysecond {
+    overflow: hidden;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto; }
+    @media screen and (max-width: 414px) {
+      .l-container__bodysecond {
+        width: 100%; } }
+    .l-container__bodysecond__main {
+      height: 100%;
+      width: 50%;
+      text-align: center;
+      float: left; }
+      @media screen and (max-width: 414px) {
+        .l-container__bodysecond__main {
+          width: 100%; } }
+    .l-container__bodysecond__sidebar {
+      height: 100%;
+      width: 50%;
+      text-align: center;
+      float: left; }
+      @media screen and (max-width: 414px) {
+        .l-container__bodysecond__sidebar {
+          width: 100%; } }
+  .l-container .sentence {
+    width: 80%;
+    padding-bottom: 20px;
+    position: relative;
+    left: 200px;
+    text-align: left;
+    line-height: 30px; }
+    @media screen and (max-width: 414px) {
+      .l-container .sentence {
+        width: 80%;
+        padding-bottom: 20px;
+        position: relative;
+        left: 20px; } }
   .l-container__ornament__span {
     display: inline-block;
     background: #fff;
@@ -284,10 +326,6 @@ img {
     .c-panel__body-last {
       position: relative;
       top: -154px; } }
-  @media screen and (max-width: 414px) {
-    .c-panel__body-seven {
-      position: relative;
-      top: -13px; } }
   .c-panel__border {
     border-radius: 5px;
     border: 5px solid #f6f5f4; }
