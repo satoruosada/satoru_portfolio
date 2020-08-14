@@ -6,6 +6,9 @@
   @include mq(){
     width:100%;
   }
+  @include mr(){
+    width:100%;
+  }
   box-sizing: border-box;
   margin-left: auto;
   margin-right: auto;
@@ -62,7 +65,7 @@
     width: 80%;
     padding-bottom: 20px;
     position: relative;
-    left: 200px;
+    left: 100px;
     text-align: left;
     line-height: 30px;
     @include mq(){
@@ -70,6 +73,10 @@
       padding-bottom: 20px;
       position: relative;
       left: 20px;
+    }
+    @include mr(){
+      position: relative;
+    left: 50px;
     }
   }
   &__ornament{

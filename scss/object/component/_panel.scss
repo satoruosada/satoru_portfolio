@@ -20,6 +20,10 @@
       position: relative;
       top: -154px;
     }
+    @include ms(){
+      position: relative;
+      top: -140px;
+    }
   }
   
   &__border{

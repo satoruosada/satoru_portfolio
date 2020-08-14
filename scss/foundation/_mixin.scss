@@ -3,3 +3,13 @@
     @content;
   }
 }
+@mixin mr($breakpoint: md) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+@mixin ms($breakpoint: sma) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}

@@ -43,6 +43,7 @@ $font-family:'Indie Flower', cursive;
 
 // マップ型変数を使うと便利
 $breakpoints: (
+  'sma': 'screen and (max-width: 375px)',
   'sm': 'screen and (max-width: 414px)',
   'md': 'screen and (max-width: 768px)',
   'lg': 'screen and (max-width: 1000px)',
