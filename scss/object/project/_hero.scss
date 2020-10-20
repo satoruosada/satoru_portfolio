@@ -10,22 +10,23 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    &__title {
+    position: relative;
+    &__describe {
       font-size: 32px;
       font-family: $font-family_corp;
       color: #fff;
-      position: relative;
+      position: absolute;
       top:490px;
-      left:-30px;
+      right:30px;
       z-index:2;
       text-shadow: 0 0 20px rgba(227, 123, 137, .4), 0 0 50px rgba(0, 0, 0, .8);
       &__second{
         font-size: 38px;
         font-family: $font-family_sub;
         color: #fff;
-        position: relative;
+        position: absolute;
         top:660px;
-        left:-590px;
+        right:50px;
         z-index:2;
         text-shadow: 0 0 20px rgba(227, 123, 137, .4), 0 0 50px rgba(0, 0, 0, .8);
       }
@@ -33,10 +34,5 @@
         text-align: center;
       }
     }
-    &__br {
-      display: none;
-      @include mq() {
-        display: block;
-      }
-    }
+  
   }

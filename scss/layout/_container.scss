@@ -18,7 +18,7 @@
   padding-right: $space_xl;
   margin-bottom: 80px;
   &__title{
-    font-family: $font-family_corp;
+    font-family: $font-family_sub;
     text-align: center;
     font-size: $font-size_3l;
     margin-bottom: $space_3l;
@@ -43,12 +43,7 @@
       letter-spacing: 10px;
     }
     &__contact{
-      font-family: $font-family_sub;
-    text-align: center;
-    font-size: $font-size_3l;
-    margin-bottom: $space_3l;
-    color: white;
-    letter-spacing: 10px;
+      
     }
     @include mq(){
       width:100%;
@@ -68,7 +63,8 @@
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 30px;
+    padding-top: 60px;
+    position: relative;
   @include mq(){
     width: 100%;
    }
@@ -85,8 +81,10 @@
    &__sidebar{
     height: 100%;
     width: 50%;
-    text-align: center;
+    text-align: left;
     float: left;
+    position: relative;
+    right: -80px;
     @include mq(){
       width: 100%;
     }

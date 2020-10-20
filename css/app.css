@@ -65,7 +65,7 @@ p, a {
   text-align: center;
   font-weight: 700;
   font-family: "Roboto", sans-serif;
-  color: #070707;
+  color: #fdfbfb;
   font-size: 16px;
   position: relative;
   top: -30px; }
@@ -88,7 +88,8 @@ a:hover {
 
 img {
   width: 100%;
-  vertical-align: bottom; }
+  vertical-align: bottom;
+  border-radius: 8px; }
 
 .js-slideInto {
   opacity: 0;
@@ -153,7 +154,7 @@ img {
     .l-container {
       width: 100%; } }
   .l-container__title {
-    font-family: "Amatic SC", cursive;
+    font-family: "Architects Daughter", cursive;
     text-align: center;
     font-size: 38px;
     margin-bottom: 40px;
@@ -175,13 +176,6 @@ img {
       margin-bottom: 40px;
       color: #974807;
       letter-spacing: 10px; }
-    .l-container__title__contact {
-      font-family: "Architects Daughter", cursive;
-      text-align: center;
-      font-size: 38px;
-      margin-bottom: 40px;
-      color: white;
-      letter-spacing: 10px; }
     @media screen and (max-width: 414px) {
       .l-container__title {
         width: 100%;
@@ -198,7 +192,8 @@ img {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 30px; }
+    padding-top: 60px;
+    position: relative; }
     @media screen and (max-width: 414px) {
       .l-container__bodysecond {
         width: 100%; } }
@@ -214,8 +209,10 @@ img {
     .l-container__bodysecond__sidebar {
       height: 100%;
       width: 50%;
-      text-align: center;
-      float: left; }
+      text-align: left;
+      float: left;
+      position: relative;
+      right: -80px; }
       @media screen and (max-width: 414px) {
         .l-container__bodysecond__sidebar {
           width: 100%; } }
@@ -748,33 +745,29 @@ img {
 .p-hero {
   display: flex;
   justify-content: center;
-  align-items: center; }
-  .p-hero__title {
+  align-items: center;
+  position: relative; }
+  .p-hero__describe {
     font-size: 32px;
     font-family: "Amatic SC", cursive;
     color: #fff;
-    position: relative;
+    position: absolute;
     top: 490px;
-    left: -30px;
+    right: 30px;
     z-index: 2;
     text-shadow: 0 0 20px rgba(227, 123, 137, 0.4), 0 0 50px rgba(0, 0, 0, 0.8); }
-    .p-hero__title__second {
+    .p-hero__describe__second {
       font-size: 38px;
       font-family: "Architects Daughter", cursive;
       color: #fff;
-      position: relative;
+      position: absolute;
       top: 660px;
-      left: -590px;
+      right: 50px;
       z-index: 2;
       text-shadow: 0 0 20px rgba(227, 123, 137, 0.4), 0 0 50px rgba(0, 0, 0, 0.8); }
     @media screen and (max-width: 414px) {
-      .p-hero__title {
+      .p-hero__describe {
         text-align: center; } }
-  .p-hero__br {
-    display: none; }
-    @media screen and (max-width: 414px) {
-      .p-hero__br {
-        display: block; } }
 
 .u-bgColor__project {
   background: #f8f7fc; }

@@ -20,7 +20,7 @@ p,a{
   text-align: center;
     font-weight: 700;
     font-family: "Roboto", sans-serif;
-    color: #070707;
+    color: #fdfbfb;
     font-size: 16px;
     position: relative;
     top: -30px;
@@ -46,6 +46,7 @@ a:hover{
  img {
    width: 100%;
    vertical-align: bottom;
+   border-radius: 8px;
  }
  .js-slideInto{
   opacity:0;

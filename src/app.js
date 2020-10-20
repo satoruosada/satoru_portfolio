@@ -12,7 +12,7 @@ $(function() {
     $(this).toggleClass('active');
     $('.js-toggle-sp-menu-target').toggleClass('active');
   });
-});
+
 
 //message
   $(window).scroll(function(){
@@ -76,7 +76,7 @@ $(function() {
         }
       });
     });
-  
+ 
   //キービジュアルのスライドショー
   const pics_src = ["../images/image.1.jpeg","../images/image.2.jpeg","../images/image.3.jpeg"];
   let num = -1;
@@ -107,3 +107,4 @@ $(window).on('load',function(){
     $('.js-typing').children('span:eq('+i+')').delay(200*i).animate({'opacity':1},100);
     };
   });
+});
