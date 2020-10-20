@@ -15,6 +15,10 @@
 @import "layout/_footer";
 @import "layout/_header";
 @import "layout/_nav";
+@import "layout/_message";
+@import "layout/_about";
+@import "layout/_skill";
+
 
 // ==========================================================================
 // Object
@@ -29,14 +33,16 @@
 @import "object/component/_menu";
 @import "object/component/_panel";
 @import "object/component/_map";
+@import "object/component/_icon";
 // -----------------------------------------------------------------
 // Project
 // -----------------------------------------------------------------
 
-@import "object/project/_hero";
+@import "object/project/_slide";
 @import "object/project/_menu-trigger";
 @import "object/project/_news";
 @import "object/project/_contact";
+@import "object/project/_hero";
 
 // -----------------------------------------------------------------
 // Utility

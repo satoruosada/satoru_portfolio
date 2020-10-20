@@ -1,19 +1,11 @@
-$(function () {
 
+$(function() {
   // フロートヘッダーメニュー
-  var targetHeight = $('.js-float-menu-target').height();
-  $(window).on('scroll', function() {
+  var targetHeight = $('#message').height();
+  $(window).on('scroll', function(){
     $('.js-float-menu').toggleClass('float-active', $(this).scrollTop() > targetHeight);
   });
 
-  //DropDownmenu
- $(function(){
-  $("ul.c-menu li").hover(function(){
-    $("ul.sub:not(:animated)", this).slideDown();
-  }, function(){
-    $("ul.sub", this).slideUp();
-  });
-});
 
   //spメニュー
   $('.js-toggle-sp-menu').on('click',function(){
@@ -22,14 +14,29 @@ $(function () {
   });
 });
 
-//access
+//message
 $(function(){
   $(window).scroll(function(){
-    $('.js-slideDown').each(function(){
+    $('.js-fadeUp').each(function(){
+      var targetElement = $(this).offset().top;
+      var scroll = $(window).scrollTop();
+      var windowHeight = $(window).height();
+
+      if(scroll > targetElement - windowHeight){
+        $(this).css('opacity',1);
+        $(this).css('transform', 'translateX(0)');
+      }
+    });
+  });
+});
+
+$(function(){
+  $(window).scroll(function(){
+    $('.js-slideInto').each(function(){
       var targetElement = $(this).offset().top;
        var scroll = $(window).scrollTop();
        var windowHeight = $(window).height();
-       if(scroll > targetElement - windowHeight + 300){
+       if(scroll > targetElement - windowHeight){
          $(this).css('opacity','1');
          $(this).css('transform','translateX(0)');
        }
@@ -79,4 +86,35 @@ $(function(){
         }
       });
     });
+  });
+  
+  //キービジュアルのスライドショー
+  const pics_src = ["../images/image.1.jpeg","../images/image.2.jpeg","../images/image.3.jpeg"];
+  let num = -1;
+ 
+function slideshow_timer(){
+  if (num === 2){
+    num = 0;
+  } 
+  else {
+    num ++;
+  }
+  document.getElementById("mypic").src = pics_src[num];
+}
+ 
+setInterval(slideshow_timer, 3000);
+
+
+$(window).on('load',function(){
+   // テキストを<span></span>で囲む
+   $('.js-typing').children().andSelf().contents().each(function() {
+    if (this.nodeType == 3) {
+      $(this).replaceWith($(this).text().replace(/(\S)/g, '<span>$1</span>'));
+    }
+   });
+  // 一文字ずつフェードインさせる
+  $('.js-typing').css({'opacity':1});
+   for (var i = 0; i <= $('.js-typing').children().size(); i++) {
+    $('.js-typing').children('span:eq('+i+')').delay(200*i).animate({'opacity':1},100);
+    };
   });

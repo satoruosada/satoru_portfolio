@@ -6,19 +6,34 @@ html, body{
   color:$font-color_default;
   font-size:$font-size_default;
   line-height:1.6;
-  font-family: Quicksand, 游ゴシック体, "Yu Gothic", YuGothic, "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro",
-             メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif; // TODO:リファクタ必要（変数にする）
+  font-family:sans-serif;
   text-size-adjust:100%;
   letter-spacing: 0.1em;
   margin:0;
 }
 p,a{
   -webkit-font-smoothing:antialiased;
-  color:$font-color_default;
-  
+  color:$font-color_top;
+  font-weight:bold;
 }
+.describe{
+  text-align: center;
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+    color: #070707;
+    font-size: 16px;
+    position: relative;
+    top: -30px;
+}
+.fa{
+  color:$font-color_top;
+}
+.my-big{
+  font-size: 7em;
+}
+
 a{
-  color:black;
+  color:rgb(250, 246, 246);
   font-weight: bold;
   text-decoration: none;
   transition: .3s;
@@ -32,10 +47,10 @@ a:hover{
    width: 100%;
    vertical-align: bottom;
  }
- .js-slideDown{
+ .js-slideInto{
   opacity:0;
   transform: translateX(+200px);
-  transition: all 2s;
+  transition: all 3s;
  }
  .js-slideUp{
   opacity:0;
@@ -52,3 +67,33 @@ a:hover{
    transform: translateY(-200px);
    transition: all 1s;
  }
+.js-fadeUp{
+  opacity:0;
+  transform: translateX(-200px);
+  transition: all 3s;
+}
+.js-typing {
+  opacity: 0;
+  }
+.js-typing span {
+  opacity: 0;
+  }
+
+.text{
+  position: relative;
+    top: 50px;
+    overflow: hidden;
+    &__title1{
+      font-size: 30px;
+      color: white;
+      &__sub1{
+        font-size: 15px;
+        line-height: 30px; 
+        position: relative;
+        top: 8px;
+      }
+      &__third{
+        text-align: center;
+      }
+    }
+}
