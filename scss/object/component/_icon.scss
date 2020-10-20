@@ -1,0 +1,35 @@
+.icon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 80px;
+    right: -80px;
+}
+.circle1{
+    display:inline-block;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(8, 8, 177);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 210px;
+}
+.circle2{
+    display:inline-block;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(161, 6, 6);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 200px;
+}
+.circle3{
+    display:inline-block;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(156, 154, 16);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 190px;
+}

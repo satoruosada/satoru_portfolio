@@ -1,0 +1,52 @@
+
+.slider{
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+}
+.slider .image{
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  animation: anime 15s 0s infinite; /* ②で設定したanimation-delayをスライド数で割った時間をdelay(15s)に入れる */
+  opacity: 0;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+/*
+  ②画像の数ごとに animation-delay を設定します。
+　下記では、5秒間隔で切り替わるように設定しています。
+*/
+.slider .image:nth-of-type(1){
+  background-image: url(../images/image.7.jpg);
+}
+.slider .image:nth-of-type(2){
+  animation-delay: 5s;
+  background-image: url(../images/image.6.jpg);
+}
+.slider .image:nth-of-type(3){
+  animation-delay: 10s;
+  background-image: url(https://picsum.photos/id/239/960/540);
+}
+@keyframes anime {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.18);
+  }
+}
+
+
