@@ -15,7 +15,6 @@ $(function() {
 });
 
 //message
-$(function(){
   $(window).scroll(function(){
     $('.js-fadeUp').each(function(){
       var targetElement = $(this).offset().top;
@@ -28,9 +27,7 @@ $(function(){
       }
     });
   });
-});
 
-$(function(){
   $(window).scroll(function(){
     $('.js-slideInto').each(function(){
       var targetElement = $(this).offset().top;
@@ -42,9 +39,7 @@ $(function(){
        }
      });
    });
- });
 
- $(function(){
   $(window).scroll(function(){
     $('.js-slideUp').each(function(){
       var targetElement = $(this).offset().top;
@@ -56,10 +51,8 @@ $(function(){
        }
      });
    });
- });
 
 //contact
- $(function(){
    $(window).scroll(function(){
      $('.js-fadeIn').each(function(){
        var targetElement = $(this).offset().top;
@@ -71,10 +64,7 @@ $(function(){
        }
      });
    });
- });
 
-
-  $(function(){
     $(window).scroll(function (){
         $('.js-slideIn').each(function(){
             var targetElement = $(this).offset().top;
@@ -86,7 +76,6 @@ $(function(){
         }
       });
     });
-  });
   
   //キービジュアルのスライドショー
   const pics_src = ["../images/image.1.jpeg","../images/image.2.jpeg","../images/image.3.jpeg"];
