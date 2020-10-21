@@ -17,13 +17,62 @@
   &__corp{
     // グラーデーション参考 https://uigradients.com/
     color: #fff;
-    background: #aec07e; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #9d9e98, #aec07e); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #9d9e98, #aec07e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #a79e6c; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #9d9e98, #a79e6c); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #9d9e98,#a79e6c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   }
   &__l{
     padding: $space_l $space_m;
     width:100%;
     font-size: $font-size_l;
   }
+}
+
+.button1 {
+  position: relative;
+    z-index: 2;
+    border: 0px #333;
+    color: rgb(138, 60, 8);
+    line-height: 180px;
+    overflow: hidden;
+}
+.button1:hover {
+  background-color: rgb(63, 65, 65);
+  border-color: #59b1eb;
+  color: #59b1eb;
+}
+.button1::after {
+  top: -100%;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+}
+.button1:hover::after {
+  top: 0;
+  left: 0;
+  background-color: #333;
+}
+.button2 {
+  position: relative;
+    z-index: 2;
+    border: 0px #333;
+    color: rgb(138, 60, 8);
+    line-height: 180px;
+    overflow: hidden;
+}
+.button2:hover {
+  background-color: rgb(63, 65, 65);
+  border-color: #59b1eb;
+  color: #59b1eb;
+}
+.button2::after {
+  top: -100%;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+}
+.button2:hover::after {
+  top: 0;
+  left: 0;
+  background-color: #333;
 }

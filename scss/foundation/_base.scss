@@ -16,14 +16,19 @@ p,a{
   color:$font-color_top;
   font-weight:bold;
 }
-.describe{
+h3{
   text-align: center;
-    font-weight: 700;
-    font-family: "Roboto", sans-serif;
-    color: #fdfbfb;
-    font-size: 16px;
-    position: relative;
-    top: -30px;
+  font-family: "Roboto", sans-serif;
+  color: #fdfbfb;
+  font-size: 18px;
+  position: relative;
+  top: -30px;
+}
+h4{
+  color: #fdfbfb;
+  font-size: 28px;
+  font-family: sans-serif;
+  font-weight: 600;
 }
 .fa{
   color:$font-color_top;
@@ -97,4 +102,9 @@ a:hover{
         text-align: center;
       }
     }
+}
+label{
+  color: #fff;
+    display: block;
+    text-align: left;
 }

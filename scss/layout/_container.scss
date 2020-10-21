@@ -9,6 +9,10 @@
   @include mr(){
     width:100%;
   }
+  &__sub{
+    padding-top:40px;
+    padding-bottom: 120px;
+  }
   box-sizing: border-box;
   margin-left: auto;
   margin-right: auto;
@@ -42,23 +46,11 @@
       color: rgb(151, 72, 7);
       letter-spacing: 10px;
     }
-    &__contact{
-      
-    }
-    @include mq(){
-      width:100%;
-      margin-left: auto;
-      margin-right: auto;
-    }
+   
+  
   }
+
   &__body{
-    overflow: hidden;
-    @include mq(){
-      padding-left: 15px;
-      padding-right: 15px;
-     }
-  }
-  &__bodysecond{
     overflow: hidden;
     text-align: center;
     margin-left: auto;
@@ -85,6 +77,7 @@
     float: left;
     position: relative;
     right: -80px;
+    line-height: 36px;
     @include mq(){
       width: 100%;
     }
